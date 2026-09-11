@@ -1,78 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hi">
 <head>
   <meta charset="UTF-8">
+  <!-- मोबाइल स्क्रीन पर सही फिट होने के लिए viewport -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Modern Responsive Card</title>
   <style>
-    :root {
-      --bg: #0f172a;
-      --card-bg: #1e293b;
-      --text: #f8fafc;
-      --muted: #94a3b8;
-      --accent: #38bdf8;
-    }
-
     * {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
-      font-family: system-ui, -apple-system, sans-serif;
     }
 
     body {
-      background-color: var(--bg);
-      color: var(--text);
-      display: grid;
-      place-items: center;
-      min-height: 100vh;
-      padding: 1rem;
+      /* min-height: 100dvh से मोबाइल ब्राउज़र के बार कटते नहीं हैं */
+      min-height: 100dvh;
+      display: flex;
+      justify-content: center; /* आड़ा बीच में (Horizontally Center) */
+      align-items: center;     /* खड़ा बीच में (Vertically Center) */
+      background: #1e293b;     /* बैकग्राउंड डार्क कलर */
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      padding: 20px;
     }
 
     .card {
-      background-color: var(--card-bg);
-      border: 1px solid #334155;
-      border-radius: 12px;
-      padding: 2rem;
-      max-width: 420px;
+      background: #334155;
+      color: #ffffff;
+      padding: 28px 24px;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+      max-width: 400px;
       width: 100%;
-      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+      border: 1px solid rgba(255, 255, 255, 0.1);
     }
 
-    .card h2 {
+    .card h1 {
       font-size: 1.5rem;
-      margin-bottom: 0.75rem;
+      font-weight: 700;
+      color: #fde047; /* हेडिंग का हल्का पीला रंग */
+      margin-bottom: 12px;
+      line-height: 1.3;
     }
 
     .card p {
-      color: var(--muted);
-      line-height: 1.6;
-      margin-bottom: 1.5rem;
+      font-size: 0.95rem;
+      color: #cbd5e1;
+      line-height: 1.5;
+      margin-bottom: 24px;
     }
 
     .btn {
       display: inline-block;
-      background-color: var(--accent);
+      background-color: #2dd4bf;
       color: #0f172a;
       font-weight: 600;
-      text-decoration: none;
-      padding: 0.75rem 1.25rem;
+      padding: 10px 20px;
       border-radius: 8px;
-      transition: opacity 0.2s ease;
+      text-decoration: none;
+      border: none;
+      font-size: 0.95rem;
+      cursor: pointer;
+      transition: background 0.2s;
     }
 
     .btn:hover {
-      opacity: 0.9;
+      background-color: #14b8a6;
     }
   </style>
 </head>
 <body>
 
-  <main class="card">
-    <h2>Clean Starter Template</h2>
+  <div class="card">
+    <h1>Clean Starter Template</h1>
     <p>A mobile-ready, accessible HTML5 layout styled with modern CSS variables and a dark palette.</p>
-    <a href="#" class="btn">Get Started</a>
-  </main>
+    <button class="btn">Get Started</button>
+  </div>
 
 </body>
 </html>
