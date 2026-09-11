@@ -1,80 +1,104 @@
 <!DOCTYPE html>
 <html lang="hi">
 <head>
-  <meta charset="UTF-8">
-  <!-- मोबाइल स्क्रीन पर सही फिट होने के लिए viewport -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Modern Responsive Card</title>
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Join Our Telegram Channels</title>
+ <style>
+ * {
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+ }
 
-    body {
-      /* min-height: 100dvh से मोबाइल ब्राउज़र के बार कटते नहीं हैं */
-      min-height: 100dvh;
-      display: flex;
-      justify-content: center; /* आड़ा बीच में (Horizontally Center) */
-      align-items: center;     /* खड़ा बीच में (Vertically Center) */
-      background: #1e293b;     /* बैकग्राउंड डार्क कलर */
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      padding: 20px;
-    }
+ body {
+ min-height: 100dvh;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ background: linear-gradient(135deg, #0f172a, #1e293b);
+ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+ padding: 20px;
+ }
 
-    .card {
-      background: #334155;
-      color: #ffffff;
-      padding: 28px 24px;
-      border-radius: 16px;
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-      max-width: 400px;
-      width: 100%;
-      border: 1px solid rgba(255, 255, 255, 0.1);
-    }
+ .card {
+ background: #1e293b;
+ border: 1px solid rgba(255, 255, 255, 0.1);
+ border-radius: 20px;
+ padding: 32px 24px;
+ width: 100%;
+ max-width: 380px;
+ text-align: center;
+ box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+ }
 
-    .card h1 {
-      font-size: 1.5rem;
-      font-weight: 700;
-      color: #fde047; /* हेडिंग का हल्का पीला रंग */
-      margin-bottom: 12px;
-      line-height: 1.3;
-    }
+ .card h1 {
+ color: #ffffff;
+ font-size: 1.5rem;
+ margin-bottom: 8px;
+ }
 
-    .card p {
-      font-size: 0.95rem;
-      color: #cbd5e1;
-      line-height: 1.5;
-      margin-bottom: 24px;
-    }
+ .card p {
+ color: #94a3b8;
+ font-size: 0.95rem;
+ margin-bottom: 28px;
+ }
 
-    .btn {
-      display: inline-block;
-      background-color: #2dd4bf;
-      color: #0f172a;
-      font-weight: 600;
-      padding: 10px 20px;
-      border-radius: 8px;
-      text-decoration: none;
-      border: none;
-      font-size: 0.95rem;
-      cursor: pointer;
-      transition: background 0.2s;
-    }
+ .btn-container {
+ display: flex;
+ flex-direction: column;
+ gap: 14px;
+ }
 
-    .btn:hover {
-      background-color: #14b8a6;
-    }
-  </style>
+ .btn {
+ display: block;
+ padding: 14px 20px;
+ font-size: 1rem;
+ font-weight: 600;
+ text-decoration: none;
+ border-radius: 12px;
+ transition: all 0.2s ease;
+ }
+
+ .btn-main {
+ background-color: #229ED9;
+ color: #ffffff;
+ box-shadow: 0 4px 14px rgba(34, 158, 217, 0.35);
+ }
+
+ .btn-main:active {
+ transform: scale(0.98);
+ background-color: #1b87ba;
+ }
+
+ .btn-proof {
+ background-color: #10b981;
+ color: #ffffff;
+ box-shadow: 0 4px 14px rgba(16, 185, 129, 0.35);
+ }
+
+ .btn-proof:active {
+ transform: scale(0.98);
+ background-color: #059669;
+ }
+ </style>
 </head>
 <body>
 
-  <div class="card">
-    <h1>Clean Starter Template</h1>
-    <p>A mobile-ready, accessible HTML5 layout styled with modern CSS variables and a dark palette.</p>
-    <button class="btn">Get Started</button>
-  </div>
+ <div class="card">
+ <h1>Welcome!</h1>
+ <p>नीचे दिए गए बटन से हमारे Telegram चैनल्स को जॉइन करें:</p>
+
+ <div class="btn-container">
+ <a href="https://t.me/diptiSharma0798" target="_blank" class="btn btn-main">
+ 🚀 Join Main Channel
+ </a>
+
+ <a href="https://t.me/VCProofZone" target="_blank" class="btn btn-proof">
+ ✅ View Proof Channel
+ </a>
+ </div>
+ </div>
 
 </body>
 </html>
